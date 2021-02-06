@@ -1,6 +1,6 @@
 import React from 'react';
-import Request from '../app/presentational/requestComp/Request';
+import PostPerson from '../../container/PostPerson';
 
 export default function App() {
-  return <Request />;
+  return <PostPerson />;
 }

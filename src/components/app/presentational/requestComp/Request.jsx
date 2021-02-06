@@ -5,7 +5,13 @@ function Request({ url, method, jsonObj, onSubmit, onChange }) {
   return (
     <div>
       <form onSubmit={onSubmit} className="form-body">
-        <input placeholder="url" type="text" name="url" value={url} />
+        <input 
+          placeholder="url" 
+          type="text" 
+          name="url" 
+          value={url} 
+          onChange={onChange} 
+        />
         <div>
           <input 
             type="radio" 
