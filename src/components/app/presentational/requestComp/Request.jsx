@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Request.css';
 
 function Request({ url, method, jsonObj, onSubmit, onChange }) {
   return (
-    <div>
-      <form onSubmit={onSubmit} className="form-body">
+    <div className={styles.Request}>
+      <h1>Welcome to postPerson!</h1>
+      <form onSubmit={onSubmit} >
         <input 
           placeholder="url" 
           type="text" 

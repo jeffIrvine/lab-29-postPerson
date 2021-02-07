@@ -2,6 +2,7 @@ import React from 'react';
 import Request from '../components/app/presentational/requestComp/Request';
 import Response from '../components/app/presentational/response/Response';
 import fetch from '../services/Fetch';
+import styles from './PostPerson.css';
 
 export default class postPerson extends React.Component {
   state={
@@ -30,17 +31,19 @@ export default class postPerson extends React.Component {
     const { url, method, jsonObj, response } = this.state;
     return (
       <>
-        <Request 
-          url={url}
-          method={method}
-          jsonObj={jsonObj}
-          onSubmit={this.handleSubmit}
-          onChange={this.handleChange}
-        />
+        <div className={styles.PostPerson}>
+          <Request 
+            url={url}
+            method={method}
+            jsonObj={jsonObj}
+            onSubmit={this.handleSubmit}
+            onChange={this.handleChange}
+          />
 
-        <Response 
-          response={response}
-        />
+          <Response 
+            response={response}
+          />
+        </div>
     
       </>
     );

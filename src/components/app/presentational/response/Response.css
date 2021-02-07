@@ -1,6 +1,13 @@
-.Response {
-  height: 10em;
-  border: 5px black;
-  margin-right: .3vw;
-
+.Response{
+  height: 40rem;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: auto;
+  max-width: 50rem;
+  max-height: 50rem;
 }
