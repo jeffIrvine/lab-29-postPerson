@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request component renders Request 1`] = `
+<DocumentFragment>
+  <div
+    class="Request"
+  >
+    <h1>
+      Welcome to postPerson!
+    </h1>
+    <form>
+      <input
+        id="urlInput"
+        name="url"
+        placeholder="url"
+        type="text"
+        value=""
+      />
+      <label
+        for="GET"
+      />
+      <div>
+        <label
+          for="GET"
+        >
+          <input
+            id="get"
+            name="method"
+            type="radio"
+            value="/get"
+          />
+        </label>
+        <span>
+          /get
+        </span>
+        <input
+          name="method"
+          type="radio"
+          value="/post"
+        />
+        <span>
+          /post
+        </span>
+        <input
+          name="method"
+          type="radio"
+          value="/put"
+        />
+        <span>
+          /put
+        </span>
+        <input
+          name="method"
+          type="radio"
+          value="/delete"
+        />
+        <span>
+          /delete
+        </span>
+      </div>
+      <div>
+        <textarea
+          name="jsonObj"
+          placeholder="Input Json Object here..."
+        />
+      </div>
+      <button
+        class="submit-button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

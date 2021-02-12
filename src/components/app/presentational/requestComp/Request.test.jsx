@@ -1,6 +1,6 @@
 import React from 'react';
-import Request from './Request';
 import { render, cleanup } from '@testing-library/react';
+import Request from './Request';
 
 describe('Request component', () => {
   afterEach(() => cleanup());
@@ -8,7 +8,7 @@ describe('Request component', () => {
     const { asFragment } = render(<Request
       url=""
       method=""
-      json=""
+      json="{}"
       onSubmit={ () => {} } 
       onChange={ () => {} } 
     />);

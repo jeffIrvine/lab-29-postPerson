@@ -7,21 +7,26 @@ function Request({ url, method, jsonObj, onSubmit, onChange }) {
     <div className={styles.Request}>
       <h1>Welcome to postPerson!</h1>
       <form onSubmit={onSubmit} >
-        <input 
+        <input
+          id="urlInput" 
           placeholder="url" 
           type="text" 
           name="url" 
           value={url} 
           onChange={onChange} 
         />
+        <label htmlFor="GET"></label>
         <div>
-          <input 
-            type="radio" 
-            name="method" 
-            value="/get" 
-            checked={method === '/get'} 
-            onChange={onChange}
-          /> 
+          <label htmlFor="GET">
+            <input
+              id="get" 
+              type="radio" 
+              name="method" 
+              value="/get" 
+              checked={method === '/get'} 
+              onChange={onChange}
+            /> 
+          </label>
           <span>/get</span>
 
           <input 
